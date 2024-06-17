@@ -5,8 +5,11 @@ from torch.utils.data import DataLoader, Dataset
 import numpy as np
 
 # 构建Resnet块
-# class ResnetBlock(nn.module):
-#     def __init__(self):
+class Basic(nn.module):
+    def __init__(self):
+        super(Basic, self).__init__()
+        self.conv1 = nn.Conv2d()
+
 
 # 定义DataSet来加载图片
 class GCFDataset(Dataset):
