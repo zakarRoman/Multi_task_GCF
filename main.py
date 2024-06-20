@@ -10,12 +10,11 @@ from utils.pictiureTrans import pic_trans
 
 if __name__ == '__main__':
     image_tensor = pic_trans("pictures")
-    image_tensor = image_tensor.unsqueeze(0)
     print(image_tensor.shape)
 
-    model = EncoderDecoder()
-    output = model(image_tensor)
-    print(f"结果是{output}")
+    # model = EncoderDecoder()
+    # output = model(image_tensor)
+    # print(f"结果是{output}")
 
     # gcf_images = [...]
     # labelList = [...]

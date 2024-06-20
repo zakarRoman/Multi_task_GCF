@@ -8,13 +8,12 @@ from torch.utils.data import DataLoader, Dataset
 import torchvision.transforms as transforms
 from utils.pictiureTrans import pic_trans
 
-
 gcf_images = pic_trans("pictures")
 labelList = [...]
 
 # 划分训练集和验证集
 train_images, val_images, train_labels, val_labels = train_test_split(gcf_images, labelList, test_size=0.2,
-                                                                          random_state=42)
+                                                                      random_state=42)
 
 # 创建数据集和数据加载器
 train_dataset = GCFDataset(train_images, train_labels)
