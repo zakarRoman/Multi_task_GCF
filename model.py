@@ -88,5 +88,5 @@ class GCFDataset(Dataset):
 
     def __getitem__(self, idx):
         image = self.gcf_images[idx]
-        label = self.labelsp[idx]
+        label = self.labels[idx]
         return torch.tensor(image, dtype=torch.float32), torch.tensor(label, dtype=torch.float32)

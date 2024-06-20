@@ -38,7 +38,7 @@ if __name__ == '__main__':
 
     # 初始化模型、损失函数和优化器
     model = EncoderDecoder()
-    criterion = nn.MSELoss()  # 这里假设是回归问题，使用均方误差损失
+    criterion = nn.MSELoss()  # 使用均方误差损失
     optimizer = optim.Adam(model.parameters(), lr=0.001)
 
     # 训练过程
